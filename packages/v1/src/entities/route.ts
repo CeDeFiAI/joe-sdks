@@ -1,4 +1,4 @@
-import { ChainId, Currency, Token, WAVAX } from '@traderjoe-xyz/sdk-core'
+import { ChainId, Currency, Token, WAVAX } from '@cedefiai/traderjoe-sdk-core'
 import invariant from 'tiny-invariant'
 
 import { Pair } from './pair'

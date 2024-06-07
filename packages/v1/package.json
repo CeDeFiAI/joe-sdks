@@ -1,5 +1,5 @@
 {
-  "name": "@traderjoe-xyz/sdk",
+  "name": "@cedefiai/traderjoe-sdk-v1",
   "license": "MIT",
   "version": "5.0.1",
   "description": "🛠 An SDK for building applications on top of Trader Joe.",
@@ -8,12 +8,12 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/traderjoe-xyz/joe-sdks",
+  "repository": "https://github.com/CeDeFiAI/joe-sdks",
   "keywords": [
-    "traderjoe-xyz",
+    "cedefiai",
     "avalanche"
   ],
-  "module": "dist/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
     "test": "vitest --config ./vitest.config.ts",
     "lint": "eslint \"src/**/*.ts*\" \"test/**/*.ts*\"",
@@ -22,7 +22,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
-    "@traderjoe-xyz/sdk-core": "workspace:^",
+    "@cedefiai/traderjoe-sdk-core": "workspace:^",
     "big.js": "^6.2.1",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^4.3.0",

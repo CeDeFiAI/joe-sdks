@@ -3,9 +3,9 @@
 ## Packages
 
 ```
-npm install @traderjoe-xyz/sdk-core
-npm install @traderjoe-xyz/sdk
-npm install @traderjoe-xyz/sdk-v2
+npm install @cedefiai/traderjoe-sdk-core
+npm install @cedefiai/traderjoe-sdk-v1
+npm install @cedefiai/traderjoe-sdk-v2
 ```
 
 ## Develop

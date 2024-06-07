@@ -13,7 +13,7 @@ importers:
         version: 2.26.2
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.1.0
-        version: 6.4.0(@typescript-eslint/parser@6.19.1)(eslint@8.47.0)(typescript@5.0.4)
+        version: 6.4.0(@typescript-eslint/parser@6.19.1(eslint@8.47.0)(typescript@5.0.4))(eslint@8.47.0)(typescript@5.0.4)
       babel-plugin-transform-jsbi-to-bigint:
         specifier: ^1.3.1
         version: 1.4.0
@@ -25,7 +25,7 @@ importers:
         version: 8.10.0(eslint@8.47.0)
       eslint-plugin-prettier:
         specifier: ^5.0.0
-        version: 5.0.0(eslint-config-prettier@8.10.0)(eslint@8.47.0)(prettier@3.0.2)
+        version: 5.0.0(eslint-config-prettier@8.10.0(eslint@8.47.0))(eslint@8.47.0)(prettier@3.0.2)
       husky:
         specifier: ^8.0.1
         version: 8.0.3
@@ -34,13 +34,13 @@ importers:
         version: 22.1.0
       lint-staged:
         specifier: ^13.0.0
-        version: 13.3.0
+        version: 13.3.0(enquirer@2.4.1)
       prettier:
         specifier: ^3.0.0
         version: 3.0.2
       tsup:
         specifier: ^7.1.0
-        version: 7.2.0(typescript@5.0.4)
+        version: 7.2.0(postcss@8.4.28)(typescript@5.0.4)
       turbo:
         specifier: ^1.10.8
         version: 1.10.12
@@ -84,7 +84,7 @@ importers:
 
   packages/v1:
     dependencies:
-      '@traderjoe-xyz/sdk-core':
+      '@cedefiai/traderjoe-sdk-core':
         specifier: workspace:^
         version: link:../core
       big.js:
@@ -115,7 +115,7 @@ importers:
 
   packages/v2:
     dependencies:
-      '@traderjoe-xyz/sdk-core':
+      '@cedefiai/traderjoe-sdk-core':
         specifier: workspace:^
         version: link:../core
       big.js:
@@ -2959,7 +2959,7 @@ snapshots:
 
   '@types/semver@7.5.0': {}
 
-  '@typescript-eslint/eslint-plugin@6.4.0(@typescript-eslint/parser@6.19.1)(eslint@8.47.0)(typescript@5.0.4)':
+  '@typescript-eslint/eslint-plugin@6.4.0(@typescript-eslint/parser@6.19.1(eslint@8.47.0)(typescript@5.0.4))(eslint@8.47.0)(typescript@5.0.4)':
     dependencies:
       '@eslint-community/regexpp': 4.6.2
       '@typescript-eslint/parser': 6.19.1(eslint@8.47.0)(typescript@5.0.4)
@@ -2974,6 +2974,7 @@ snapshots:
       natural-compare: 1.4.0
       semver: 7.5.4
       ts-api-utils: 1.0.1(typescript@5.0.4)
+    optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -2986,6 +2987,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 6.19.1
       debug: 4.3.4
       eslint: 8.47.0
+    optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -3007,6 +3009,7 @@ snapshots:
       debug: 4.3.4
       eslint: 8.47.0
       ts-api-utils: 1.0.1(typescript@5.0.4)
+    optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -3025,6 +3028,7 @@ snapshots:
       minimatch: 9.0.3
       semver: 7.5.4
       ts-api-utils: 1.0.3(typescript@5.0.4)
+    optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -3038,6 +3042,7 @@ snapshots:
       is-glob: 4.0.3
       semver: 7.5.4
       ts-api-utils: 1.0.1(typescript@5.0.4)
+    optionalDependencies:
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -3098,7 +3103,7 @@ snapshots:
   abab@2.0.6: {}
 
   abitype@1.0.0(typescript@5.0.4):
-    dependencies:
+    optionalDependencies:
       typescript: 5.0.4
 
   acorn-jsx@5.3.2(acorn@8.10.0):
@@ -3561,13 +3566,14 @@ snapshots:
     dependencies:
       eslint: 8.47.0
 
-  eslint-plugin-prettier@5.0.0(eslint-config-prettier@8.10.0)(eslint@8.47.0)(prettier@3.0.2):
+  eslint-plugin-prettier@5.0.0(eslint-config-prettier@8.10.0(eslint@8.47.0))(eslint@8.47.0)(prettier@3.0.2):
     dependencies:
       eslint: 8.47.0
-      eslint-config-prettier: 8.10.0(eslint@8.47.0)
       prettier: 3.0.2
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
+    optionalDependencies:
+      eslint-config-prettier: 8.10.0(eslint@8.47.0)
 
   eslint-scope@7.2.2:
     dependencies:
@@ -4111,14 +4117,14 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  lint-staged@13.3.0:
+  lint-staged@13.3.0(enquirer@2.4.1):
     dependencies:
       chalk: 5.3.0
       commander: 11.0.0
       debug: 4.3.4
       execa: 7.2.0
       lilconfig: 2.1.0
-      listr2: 6.6.1
+      listr2: 6.6.1(enquirer@2.4.1)
       micromatch: 4.0.5
       pidtree: 0.6.0
       string-argv: 0.3.2
@@ -4127,7 +4133,7 @@ snapshots:
       - enquirer
       - supports-color
 
-  listr2@6.6.1:
+  listr2@6.6.1(enquirer@2.4.1):
     dependencies:
       cli-truncate: 3.1.0
       colorette: 2.0.20
@@ -4135,6 +4141,8 @@ snapshots:
       log-update: 5.0.1
       rfdc: 1.3.0
       wrap-ansi: 8.1.0
+    optionalDependencies:
+      enquirer: 2.4.1
 
   load-tsconfig@0.2.5: {}
 
@@ -4419,10 +4427,12 @@ snapshots:
       mlly: 1.4.0
       pathe: 1.1.1
 
-  postcss-load-config@4.0.1:
+  postcss-load-config@4.0.1(postcss@8.4.28):
     dependencies:
       lilconfig: 2.1.0
       yaml: 2.3.1
+    optionalDependencies:
+      postcss: 8.4.28
 
   postcss@8.4.28:
     dependencies:
@@ -4797,7 +4807,7 @@ snapshots:
 
   tslib@2.6.1: {}
 
-  tsup@7.2.0(typescript@5.0.4):
+  tsup@7.2.0(postcss@8.4.28)(typescript@5.0.4):
     dependencies:
       bundle-require: 4.0.1(esbuild@0.18.20)
       cac: 6.7.14
@@ -4807,12 +4817,14 @@ snapshots:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss-load-config: 4.0.1
+      postcss-load-config: 4.0.1(postcss@8.4.28)
       resolve-from: 5.0.0
       rollup: 3.28.0
       source-map: 0.8.0-beta.0
       sucrase: 3.34.0
       tree-kill: 1.2.2
+    optionalDependencies:
+      postcss: 8.4.28
       typescript: 5.0.4
     transitivePeerDependencies:
       - supports-color
@@ -4938,8 +4950,9 @@ snapshots:
       '@scure/bip39': 1.2.1
       abitype: 1.0.0(typescript@5.0.4)
       isows: 1.0.3(ws@8.13.0)
-      typescript: 5.0.4
       ws: 8.13.0
+    optionalDependencies:
+      typescript: 5.0.4
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -4965,11 +4978,11 @@ snapshots:
 
   vite@4.4.9(@types/node@20.5.0):
     dependencies:
-      '@types/node': 20.5.0
       esbuild: 0.18.20
       postcss: 8.4.28
       rollup: 3.28.0
     optionalDependencies:
+      '@types/node': 20.5.0
       fsevents: 2.3.3
 
   vitest@0.31.4(jsdom@22.1.0):
@@ -4988,7 +5001,6 @@ snapshots:
       chai: 4.3.7
       concordance: 5.0.4
       debug: 4.3.4
-      jsdom: 22.1.0
       local-pkg: 0.4.3
       magic-string: 0.30.2
       pathe: 1.1.1
@@ -5000,6 +5012,8 @@ snapshots:
       vite: 4.4.9(@types/node@20.5.0)
       vite-node: 0.31.4(@types/node@20.5.0)
       why-is-node-running: 2.2.2
+    optionalDependencies:
+      jsdom: 22.1.0
     transitivePeerDependencies:
       - less
       - lightningcss

@@ -9,7 +9,7 @@ import {
   mainnet
 } from 'viem/chains'
 
-import { ChainId } from '@traderjoe-xyz/sdk-core'
+import { ChainId } from '@cedefiai/traderjoe-sdk-core'
 
 export const getDefaultPublicClient = (chainId: ChainId): PublicClient => {
   const chain = getChain(chainId)

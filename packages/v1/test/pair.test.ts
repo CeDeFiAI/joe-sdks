@@ -4,7 +4,7 @@ import {
   TokenAmount,
   WAVAX,
   Price
-} from '@traderjoe-xyz/sdk-core'
+} from '@cedefiai/traderjoe-sdk-core'
 import { Pair } from '../src'
 import { describe, it, expect } from 'vitest'
 

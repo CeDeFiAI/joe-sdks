@@ -1,4 +1,4 @@
-import { TokenAmount, ChainId, Token } from '@traderjoe-xyz/sdk-core'
+import { TokenAmount, ChainId, Token } from '@cedefiai/traderjoe-sdk-core'
 import { Pair } from './entities/pair'
 import invariant from 'tiny-invariant'
 import { ERC20ABI, JoePairABI } from './abis/ts'
