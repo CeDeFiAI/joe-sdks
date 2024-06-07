@@ -8,7 +8,7 @@ import {
   TokenAmount,
   TradeType,
   WAVAX
-} from '@traderjoe-xyz/sdk-core'
+} from '@cedefiai/traderjoe-sdk-core'
 import { Pair, Route, Trade } from '../src'
 import { describe, it, expect } from 'vitest'
 

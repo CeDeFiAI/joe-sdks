@@ -20,7 +20,7 @@ pnpm build
 
 ## Installation
 
-This project is available as an npm package. Add to your project with `npm install @traderjoe-xyz/sdk-core`
+This project is available as an npm package. Add to your project with `npm install @cedefiai/traderjoe-sdk-core`
 
 ## Attribution
 

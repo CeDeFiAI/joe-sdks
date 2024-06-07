@@ -18,7 +18,7 @@ import {
   TokenAmount,
   currencyEquals,
   WAVAX
-} from '@traderjoe-xyz/sdk-core'
+} from '@cedefiai/traderjoe-sdk-core'
 import { Price } from './price'
 import { Pair } from './pair'
 import { Route } from './route'

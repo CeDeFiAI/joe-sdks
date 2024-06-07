@@ -1,5 +1,5 @@
 {
-  "name": "@traderjoe-xyz/sdk-v2",
+  "name": "@cedefiai/traderjoe-sdk-v2",
   "license": "MIT",
   "version": "3.0.5",
   "main": "dist/index.js",
@@ -7,12 +7,12 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/traderjoe-xyz/joe-sdks",
+  "repository": "https://github.com/CeDeFiAI/joe-sdks",
   "keywords": [
-    "traderjoe-xyz",
+    "cedefiai",
     "avalanche"
   ],
-  "module": "dist/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
     "lint": "eslint \"src/**/*.ts*\"",
     "lint:fix": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -21,7 +21,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
-    "@traderjoe-xyz/sdk-core": "workspace:^",
+    "@cedefiai/traderjoe-sdk-core": "workspace:^",
     "big.js": "^6.2.1",
     "jsbi": "^4.3.0",
     "lodash.flatmap": "^4.5.0",

@@ -10,7 +10,7 @@ import {
   ONE,
   ZERO,
   Price
-} from '@traderjoe-xyz/sdk-core'
+} from '@cedefiai/traderjoe-sdk-core'
 import JSBI from 'jsbi'
 import invariant from 'tiny-invariant'
 

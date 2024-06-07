@@ -7,7 +7,7 @@ import {
   Fraction,
   ChainId,
   ONE
-} from '@traderjoe-xyz/sdk-core'
+} from '@cedefiai/traderjoe-sdk-core'
 
 import {
   LBPair,

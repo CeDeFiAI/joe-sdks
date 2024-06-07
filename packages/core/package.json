@@ -1,5 +1,5 @@
 {
-  "name": "@traderjoe-xyz/sdk-core",
+  "name": "@cedefiai/traderjoe-sdk-core",
   "version": "2.0.1",
   "license": "MIT",
   "main": "dist/index.js",
@@ -7,9 +7,9 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/traderjoe-xyz/joe-sdks",
+  "repository": "https://github.com/CeDeFiAI/joe-sdks",
   "keywords": [
-    "traderjoe-xyz",
+    "cedefiai",
     "avalanche"
   ],
   "scripts": {
